@@ -19,7 +19,9 @@
             <Label Text="Edad" Grid.Column="3" FontAttributes="Bold"/>
 
         </Grid>
-        <CollectionView x:Name="listaEstudiantes">
+        <CollectionView x:Name="listaEstudiantes"
+                        SelectionMode="Single"
+                        SelectionChanged="listaEstudiantes_SelectionChanged">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
@@ -57,7 +59,10 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-        
-
+        <Button
+           x:Name="btnAgregar"
+           Text="Agregar Estudiante"
+            Clicked="btnAgregar_Clicked"
+            ></Button>
     </VerticalStackLayout>
 </ContentPage>
