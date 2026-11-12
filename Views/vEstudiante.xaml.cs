@@ -7,7 +7,7 @@ namespace dGomezS6.Views;
 public partial class vEstudiante : ContentPage
 {
 	//Se debe tomar la ip de la maquina desde el cmd con el comando ipconfig y tomando la dirrecion ipv4
-	private const string Url = "http://192.168.17.20/ws_uisrael/post.php";
+	private const string Url = "http://192.168.56.1/ws_uisrael/post.php";
 	private readonly HttpClient cliente = new HttpClient();
 	private ObservableCollection<Estudiante> _estudiante;
 

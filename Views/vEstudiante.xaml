@@ -9,7 +9,7 @@
             VerticalOptions="Center"
             FontSize="20"
             HorizontalTextAlignment="Center"/>
-        <Grid BackgroundColor="Black"
+        <Grid BackgroundColor="White"
               ColumnDefinitions="*,*,*,*"
               Padding="5">
 
