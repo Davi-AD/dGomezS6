@@ -16,7 +16,7 @@ public partial class vEstudiante : ContentPage
 		InitializeComponent();
 		mostrar();
 	}
-	public async void mostrar() 
+	public async void mostrar()
 	{
 		var content = await cliente.GetStringAsync(Url);
 		List<Estudiante> mostrarEst = JsonConvert.DeserializeObject<List<Estudiante>>(content);
@@ -24,4 +24,6 @@ public partial class vEstudiante : ContentPage
 		listaEstudiantes.ItemsSource = _estudiante;
 
 	}
+
+
 }
